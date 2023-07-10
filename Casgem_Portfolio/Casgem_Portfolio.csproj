@@ -386,6 +386,7 @@
     <Content Include="Views\Project\ProjectDetails.cshtml" />
     <Content Include="Views\Project\UpdateProject.cshtml" />
     <Content Include="Views\Reference\UpdateReference.cshtml" />
+    <Content Include="Views\Reference\AddReference.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

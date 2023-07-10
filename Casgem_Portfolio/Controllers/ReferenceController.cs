@@ -16,6 +16,20 @@ namespace Casgem_Portfolio.Controllers
             return View(values);
         }
 
+        [HttpGet]
+        public ActionResult AddReference()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult AddReference(tbl_referance p)
+        {
+            db.tbl_referance.Add(p);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
         public ActionResult DeleteReference(int id)
         {
             var value = db.tbl_referance.Find(id);
