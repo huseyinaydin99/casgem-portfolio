@@ -29,7 +29,6 @@ namespace Casgem_Portfolio.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
-
         public ActionResult DeleteReference(int id)
         {
             var value = db.tbl_referance.Find(id);
