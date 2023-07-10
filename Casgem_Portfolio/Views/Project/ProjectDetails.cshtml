@@ -1,0 +1,21 @@
+﻿@model Casgem_Portfolio.Models.Entities.tbl_projects
+
+@{
+    ViewBag.Title = "ProjectDetails";
+    Layout = "~/Views/Shared/_PortfolioAdminLayout.cshtml";
+}
+<div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+    <div class="card-header">Projeler</div>
+    <div class="card-body">
+        <h6 class="card-title"><strong>Proje Detayları Görüntüleniyor</strong></h6>
+        Proje Adı: @Html.DisplayFor(x => x.Name_)
+        <br />
+        Amacı: @Html.DisplayFor(x => x.Purpose)
+        <br />
+        Proje Türü: @Html.DisplayFor(x => x.ProjectType)
+        <br />
+        Açıklaması: @Html.DisplayFor(x => x.Description)
+    </div>
+</div>
+
+

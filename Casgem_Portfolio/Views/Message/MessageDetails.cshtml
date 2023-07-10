@@ -1,0 +1,21 @@
+﻿@model Casgem_Portfolio.Models.Entities.tbl_message
+@{
+    ViewBag.Title = "MessageDetails";
+    Layout = "~/Views/Shared/_PortfolioAdminLayout.cshtml";
+}
+
+
+<div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+    <div class="card-header">Mesaj</div>
+    <div class="card-body">
+        <h6 class="card-title">Açtığınız Mesaj Görüntüleniyor</h6>
+        Konu: @Html.DisplayFor(x => x.MessageSubject)
+        <br />
+        Gönderen: @Html.DisplayFor(x => x.Name_Surname),
+        <br />
+        Mail Adresi: @Html.DisplayFor(x => x.SenderMail)
+        <br />
+        Mesaj: @Html.DisplayFor(x => x.Content)
+    </div>
+</div>
+
