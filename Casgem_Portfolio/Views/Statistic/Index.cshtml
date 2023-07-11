@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_PortfolioAdminLayout.cshtml";
+}
+
+<h2>İstatistik Sayfası</h2>
+<!-- Bir Web Sayfası Bootstrap'a göre 12'e ayrılır. -->
+<div class="card text-white bg-success mb-3" style="with: %100">
+    <div class="card-header">Toplam Personel Sayısı: </div>
+    <div class="card-body">
+        <h5 class="card-title" style="color:white">@ViewBag.employeeCount</h5>
+    </div>
+</div>
+
+<div class="card text-white bg-primary mb-3" style="with: %100">
+    <div class="card-header">En Yüksek Maaşlı Personel: </div>
+    <div class="card-body">
+        <h5 class="card-title" style="color:white">@ViewBag.maxSalaryEmployee</h5>
+    </div>
+</div>
+
+<div class="card text-white bg-info mb-3" style="with: %100">
+    <div class="card-header">Toplam Şehir Sayısı: </div>
+    <div class="card-body">
+        <h5 class="card-title" style="color:white">@ViewBag.totalCityCount</h5>
+    </div>
+</div>
+
+<div class="card text-white bg-danger mb-3" style="with: %100">
+    <div class="card-header">Yazılım Departmanında Çalışan Kişi Sayısı:</div>
+    <div class="card-body">
+        <h5 class="card-title" style="color:white">@ViewBag.countSoftwareDepartment</h5>
+    </div>
+</div>
+
+<div class="card text-white bg-dark mb-3" style="with: %100">
+    <div class="card-header">Yazılım Departmanında Çalışan Kişi Sayısı:</div>
+    <div class="card-body">
+        <h5 class="card-title" style="color:white">@ViewBag.sumTotalSalary</h5>
+    </div>
+</div>
+
+
+

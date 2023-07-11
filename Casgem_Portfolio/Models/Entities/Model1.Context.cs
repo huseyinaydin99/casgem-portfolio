@@ -30,5 +30,9 @@ namespace Casgem_Portfolio.Models.Entities
         public virtual DbSet<tbl_service> tbl_service { get; set; }
         public virtual DbSet<tbl_referance> tbl_referance { get; set; }
         public virtual DbSet<tbl_projects> tbl_projects { get; set; }
+        public virtual DbSet<tbl_resume> tbl_resume { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<TblDepartment> TblDepartment { get; set; }
+        public virtual DbSet<TblEmployee> TblEmployee { get; set; }
     }
 }

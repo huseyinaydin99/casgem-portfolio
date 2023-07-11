@@ -9,7 +9,12 @@
         <EntityTypeShape EntityType="CasgemPortfolioModel.tbl_message" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="CasgemPortfolioModel.tbl_service" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
         <EntityTypeShape EntityType="CasgemPortfolioModel.tbl_referance" Width="1.5" PointX="2.75" PointY="2.875" />
-        <EntityTypeShape EntityType="CasgemPortfolioModel.tbl_projects" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CasgemPortfolioModel.tbl_projects" Width="1.5" PointX="4.375" PointY="0.75" />
+        <EntityTypeShape EntityType="CasgemPortfolioModel.tbl_resume" Width="1.5" PointX="4.625" PointY="2.875" />
+        <EntityTypeShape EntityType="CasgemPortfolioModel.sysdiagrams" Width="1.5" PointX="9.5" PointY="2" />
+        <EntityTypeShape EntityType="CasgemPortfolioModel.TblDepartment" Width="1.5" PointX="6.125" PointY="0.5" />
+        <EntityTypeShape EntityType="CasgemPortfolioModel.TblEmployee" Width="1.5" PointX="7.875" PointY="2" />
+        <AssociationConnector Association="CasgemPortfolioModel.FK_TblEmployee_TblDepartment" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
