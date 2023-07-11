@@ -140,6 +140,7 @@
     <Compile Include="Controllers\ReferenceController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Controllers\StatisticController.cs" />
+    <Compile Include="Controllers\WhoAmiController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -215,6 +216,7 @@
     <Content Include="Models\Entities\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <Content Include="Data\CV_HUSEYIN_AYDIN_DEFAULT.pdf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -226,7 +228,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="SQL_SCRIPTS\CASGEM_PORTFOLIO.sql" />
+    <Content Include="sql_scripts\CASGEM_PORTFOLIO.sql" />
     <Content Include="Templates\alexander-starter\about.html" />
     <Content Include="Templates\alexander-starter\assets\css\style-starter.css" />
     <Content Include="Templates\alexander-starter\assets\fonts\fontawesome-webfont.svg" />
@@ -412,10 +414,11 @@
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Statistic\Index.cshtml" />
+    <Content Include="Views\Portfolio\Her Yonuyle SQL Server Egitim Bilgi Formu.pdf" />
+    <Content Include="Views\WhoAmi\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

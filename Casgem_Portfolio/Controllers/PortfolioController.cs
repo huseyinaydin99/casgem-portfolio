@@ -16,6 +16,12 @@ namespace Casgem_Portfolio.Controllers
             return View();
         }
 
+        public ActionResult RedirectToPortfolioIndex()
+        {
+            ViewBag.parameters = "Mesaj Gonderildi";
+            return View("Index");
+        }
+
         public PartialViewResult PartialHead()
         {
             return PartialView();
@@ -54,6 +60,13 @@ namespace Casgem_Portfolio.Controllers
         public string test()
         {
             return "selam";
+        }
+        [HttpGet]
+        public FileResult Download()
+        {
+            byte[] fileBytes = System.IO.File.ReadAllBytes(this.Server.MapPath("\\Data\\CV_HUSEYIN_AYDIN_DEFAULT.pdf"));
+            string fileName = "CV_HUSEYIN_AYDIN_DEFAULT.pdf";
+            return File(fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, fileName);
         }
     }
 }

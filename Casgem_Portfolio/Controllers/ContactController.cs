@@ -23,7 +23,38 @@ namespace Casgem_Portfolio.Controllers
         {
             db.tbl_message.Add(p);
             db.SaveChanges();
-            return RedirectToAction("Index", "Portfolio");
+
+
+            return RedirectToAction("RedirectToPortfolioIndex", "Portfolio");
+
+            //return View("Index", "Portfolio", "message_added");
+            //return View("Index", "message_added");
+            //return RedirectToAction("Index", "Portfolio");
+        }
+
+        [HttpPost]
+        public void SaveMessage(FormCollection fc)
+        {
+            var Name_Surname = fc[0].ToString(); //user
+            var SenderMail = fc[1].ToString();
+            var MessageSubject = fc[2].ToString();
+            var Content = fc[3].ToString();
+            tbl_message tbl_Message = new tbl_message
+            {
+                Name_Surname = Name_Surname,
+                SenderMail = SenderMail,
+                MessageSubject = MessageSubject,
+                Content = Content
+            };
+            db.tbl_message.Add(tbl_Message);
+            db.SaveChanges();
+
+
+            //return RedirectToAction("RedirectToPortfolioIndex", "Portfolio");
+
+            //return View("Index", "Portfolio", "message_added");
+            //return View("Index", "message_added");
+            //return RedirectToAction("Index", "Portfolio");
         }
     }
 }

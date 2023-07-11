@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null; //Layout kısmını buradan tekrardan düzenleyebiliriz.
 }
 
@@ -13,6 +12,7 @@ Author URL: http://w3layouts.com
 @Html.Partial("PartialHead")
 
 <body>
+    
     <!-- header -->
     @Html.Partial("PartialNavbar")
     <!-- //header -->
@@ -33,13 +33,15 @@ Author URL: http://w3layouts.com
                         <h5 class="title-small mb-2">Who am i?</h5>
                         <h3 class="title-big">I'm Alexander Smith, a visual UI/UX Designer and Web Developer</h3>
                         <p class="mt-4">
+
+                            <!--  <script> var myJsVariable = @ViewBag.parameters; alert(myJsVariable) </script> -->
                             Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
                             ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Non quae, fugiat consequatur voluptatem nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum
                             dolor sit, amet consectetur adipisicing elit. Dolor ipsum non velit reprehenderit, molestias
                             culpa!
                         </p>
-                        <a href="#download" class="btn btn-style btn-primary mt-lg-5 mt-4">Download CV</a>
+                        <a href="/Portfolio/Download" class="btn btn-style btn-primary mt-lg-5 mt-4">Download CV</a>
                     </div>
                 </div>
             </div>
@@ -392,10 +394,9 @@ Author URL: http://w3layouts.com
                     </div>
                     <div class="col-lg-4 footer-right text-lg-right text-center mt-lg-0 mt-3">
                         <ul class="social m-0 p-0">
-                            <li><a href="#facebook"><span class="fa fa-facebook-official"></span></a></li>
-                            <li><a href="#linkedin"><span class="fa fa-linkedin-square"></span></a></li>
-                            <li><a href="#instagram"><span class="fa fa-instagram"></span></a></li>
-                            <li><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="https://www.facebook.com/beyaz.sapkali.5"><span class="fa fa-facebook-official"></span></a></li>
+                            <li><a href="https://www.linkedin.com/in/huseyin99"><span class="fa fa-linkedin-square"></span></a></li>
+                            <li><a href="https://www.instagram.com/huseyin.aydin.99"><span class="fa fa-instagram"></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -439,14 +440,15 @@ Author URL: http://w3layouts.com
         const typedTextSpan = document.querySelector(".typed-text");
         const cursorSpan = document.querySelector(".cursor");
 
+        /*
         const abc = fetch("/Portfolio/test")
             .catch((err) => alert(err))
             .then((response) => { alert(JSON.stringify(response.json())); })
             .then((json) => alert(json));
-        alert(abc.test);
+        alert(abc.test);*/
 
-        const textArray2 = ["UI/UX Designer", "Freelancer", "Web developer"];
-        const textArray = [abc];
+        const textArray = ["UI/UX Designer", "Freelancer", "Web developer"];
+        //const textArray = [abc];
         const typingDelay = 200;
         const erasingDelay = 10;
         const newTextDelay = 100; // Delay between current and next text
