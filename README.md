@@ -4,7 +4,7 @@
 Kişisel tanıtım, özgeçmiş ve CV projesidir. Amaç ise işe alımı kolaylaştırmak ve işverenlere kendimizi iyi bir şekilde tanıtmak.
 #### Proje hangi teknolojiler ile kodlandı: ASP.NET MVC 5, Entity Framework, MSSQL Server, HTML5, CSS, JS ve Bootstrap.
 Aslında proje CRUD(Create, Read, Update, Delete) yapmaktan öteye gitmiyor. Okuma ve yazma yapıyor, hepsi o kadar.
-Projemiz ÇASGEM(Çalışma Sosyal Güvenlik Araştırma ve Eğitim Merkezi)'de Murat Yücedağ hocamız tarafından verildi. Kendisi başarılı ünlü, genç, dinamik ve saygılı bir hocamız. Bizi eğitmeye devam ediyor.
+Projemiz ÇASGEM(Çalışma Sosyal Güvenlik Araştırma ve Eğitim Merkezi)'de Murat Yücedağ hocamız tarafından verildi. Kendisi başarılı, ünlü, genç, dinamik ve saygılı bir hocamız. Bizi eğitmeye devam ediyor.
 Bu proje tek katmanlı bir projedir. İlk yaptığımız proje olduğu için komplex bir proje değildir.
 Projenin tek katmanı Presentation Layer(gösterim katmanı)'dır. MVC tasarım şablonu ile kodlanmıştır.
 # MVC(Model View Controller)
