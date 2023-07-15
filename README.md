@@ -70,4 +70,4 @@ View yapısı Chrome, Firefox yada Opera gibi Web tarayıcılarda gösterilen HT
 ![025](https://github.com/huseyinaydin99/casgem-portfolio/assets/16438043/6577eeb5-0e13-482d-99f8-4452814fd1b3)
 
 #### Projenin Videosu: 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nl1yHH_btjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+https://youtu.be/nl1yHH_btjM
