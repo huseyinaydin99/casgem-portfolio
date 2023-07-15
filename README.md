@@ -7,37 +7,40 @@ Aslında proje CRUD(Create, Read, Update, Delete) yapmaktan öteye gitmiyor. Oku
 Projemiz ÇASGEM(Çalışma Sosyal Güvenlik Araştırma ve Eğitim Merkezi)'de Murat Yücedağ hocamız tarafından verildi. Kendisi başarılı, ünlü, genç, dinamik ve saygılı bir hocamız. Bizi eğitmeye devam ediyor.
 Bu proje tek katmanlı bir projedir. İlk yaptığımız proje olduğu için komplex bir proje değildir.
 Projenin tek katmanı Presentation Layer(gösterim katmanı)'dır. MVC tasarım şablonu ile kodlanmıştır.
-# MVC(Model View Controller)
+## MVC(Model View Controller)
 ASP.NET MVC, C#’da web uygulamaları oluşturmak için bir framework / çerçeve / çatı) dır.
 • Model / View / Controller(Model-Görünüm-Kontrol) tasarım şablonuna dayalıdır.
 • Kontrolün tersine çevrilmesi ve bağımlılık enjeksiyonu gibi temel .NET veya .NET Core çerçevesinin özelliklerinden yararlanır.
-Model / View / Controller(Model-Görünüm-Denetleyici) nedir?
+## Model / View / Controller(Model-Görünüm-Denetleyici) nedir?
 
 MVC bir tasarım desenidir ancak bir katmanlı mimari değildir. Herhangi bir yazılım firmasına ait değildir. Tüm yazılımcılar arasında kabul görmüş ve kullanılan ortak bir tasarım şablonudur. .NET Framework / Core MVC, MVC tasarım şablonuna göre yazılmış bir çatı / framework’dür.
 İsteği / request’i ilk alan yer front controller / ön kontrolcüdür. Ön kontrolcü isteği aldıktan sonra ilgili kontrolcüye gönderir. İlgili kontrolcü isteği aldıktan sonra servis katmanına, servis katmanı ise veri erişim katmanına gider. Veri erişim katmanı veri tabanından verileri çeker getirir. Kontrolcü veriyi elde ettikten sonra ilgili verileri model nesnesinin içine koyar ve o modeli görünümün yani view’in içine gömer. İlgili view kullanıcıya html(hyper text markup language) olarak döner.
-View ile Controller arasında taşınan nesne aslında Model nesnesidir.
 
-Client tarafından gelen form nesnesi de aslında model nesnesidir.
-
-Model aslında Controller ile View arasında iletişim sağlayan nesnedir.
-
-Controller GET, POST, PUT, DELETE, PATCH gibi HTTP isteklerini karşılayan nesnedir / yapıdır.
+• View ile Controller arasında taşınan nesne aslında Model nesnesidir.
+• Client tarafından gelen form nesnesi de aslında model nesnesidir.
+• Model aslında Controller ile View arasında iletişim sağlayan nesnedir.
+• Controller GET, POST, PUT, DELETE, PATCH gibi HTTP isteklerini karşılayan nesnedir / yapıdır.
 
 View yapısı Chrome, Firefox yada Opera gibi Web tarayıcılarda gösterilen HTML(Hyper Text Markup Language) dosyasıdır. İçerisinde JS / Java Script, CSS / Cascading Style Sheet, JQuery gibi yapılar barındırabilir.
-Denetleyici / Kontrolcü / Controller:
 
-Denetleyici sınıfları, geliştiriciler tarafından oluşturulur.
+## Denetleyici / Kontrolcü / Controller:
+
+### Controller:
+• Denetleyici sınıfları, geliştiriciler tarafından oluşturulur.
 • İş mantığını içerir ve isteği işler.
 • Veri tabanından ve diğer hizmetlerden veri depolar ve alır.
 • Verileri modelin içine koyar ve modeli de View / HTML’nin içine koyar.
-Model:
+### Model:
 
-• Model, yalnızca verileri içeren bir java nesnesidir.
+• Model, yalnızca verileri içeren bir C# nesnesidir.
+• Model, View ile Controller arasında veri iletişimini / transferini sağlar.
+• Aslında kullanıcının form'dan girdiği verilerde Model olarak Controller'e iletilir.
 • Veri tabanından veya web hizmetinden verileri depolamamıza ve almamıza yardımcı olacaktır.
 
-View:
-
-View HTML, CSS, JS kodlarını barındırır. Kullanıcıya gösterilen kısım burasıdır. Butonlar, tablolar, resimler vs. görsel componentler bu kısımda yer alır.
+### View:
+• View HTML, CSS, JS kodlarını barındırır. 
+• Kullanıcıya gösterilen kısım burasıdır.
+• Butonlar, tablolar, resimler vs. görsel componentler bu kısımda yer alır.
 
 #### Projenin Görselleri: 
 ![001](https://github.com/huseyinaydin99/casgem-portfolio/assets/16438043/3ca0f1fc-da3f-485a-8824-d9391c1b21e7)
