@@ -1,7 +1,7 @@
 # casgem-portfolio
 #### ÇASGEM Full Stack .NET Framework MVC 5 Eğitim Kampı 1. Gün Oluşturulan Proje ve Verilen Ödev
 #### Projenin Amacı:
-Kişisel tanıtım, özgeçmiş ve CV projesidir. Amaç işe alımı kolaylaştırmak ve işverenlere kendimizi iyi bir şekilde tanıtmak.
+Kişisel tanıtım, özgeçmiş ve CV projesidir. Amaç ise işe alımı kolaylaştırmak ve işverenlere kendimizi iyi bir şekilde tanıtmak.
 #### Proje hangi teknolojiler ile kodlandı: ASP.NET MVC 5, Entity Framework, MSSQL Server, HTML5, CSS, JS ve Bootstrap.
 Aslında proje CRUD(Create, Read, Update, Delete) yapmaktan öteye gitmiyor. Okuma ve yazma yapıyor, hepsi o kadar.
 Projemiz ÇASGEM(Çalışma Sosyal Güvenlik Araştırma ve Eğitim Merkezi)'de Murat Yücedağ hocamız tarafından verildi. Kendisi başarılı ünlü, genç, dinamik ve saygılı bir hocamız. Bizi eğitmeye devam ediyor.
