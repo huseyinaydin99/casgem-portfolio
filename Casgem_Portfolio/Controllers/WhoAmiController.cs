@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Casgem_Portfolio.Models.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +9,12 @@ namespace Casgem_Portfolio.Controllers
 {
     public class WhoAmiController : Controller
     {
-        // GET: WhoAmi
+        CasgemPortfolioEntities1 db = new CasgemPortfolioEntities1();
+        [HttpGet]
         public ActionResult Index()
         {
-            return View();
+            var value = db.About.FirstOrDefault();
+            return View(value);
         }
     }
 }

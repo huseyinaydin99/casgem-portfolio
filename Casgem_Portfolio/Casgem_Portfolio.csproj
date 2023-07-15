@@ -129,6 +129,7 @@
     <Compile Include="App_Start\BundleConfig2.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\FeatureController.cs" />
@@ -143,6 +144,9 @@
     <Compile Include="Controllers\WhoAmiController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\About.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -160,6 +164,9 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\sysdiagrams.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\TblContact.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\TblDepartment.cs">
@@ -184,6 +191,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\tbl_service.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Users.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -235,6 +245,7 @@
     <Content Include="Templates\alexander-starter\assets\images\bg.jpg" />
     <Content Include="Templates\alexander-starter\assets\images\g3.jpg" />
     <Content Include="Templates\alexander-starter\assets\images\g5.jpg" />
+    <Content Include="Templates\alexander-starter\assets\images\logo.jpg" />
     <Content Include="Templates\alexander-starter\assets\images\myphoto.jpg" />
     <Content Include="Templates\alexander-starter\assets\images\myphoto1.jpg" />
     <Content Include="Templates\alexander-starter\assets\images\photo.png" />
@@ -255,7 +266,12 @@
     <Content Include="Templates\alexander-starter\assets\js\theme-change.js" />
     <Content Include="Templates\alexander-starter\contact.html" />
     <Content Include="Templates\alexander-starter\index.html" />
-    <Content Include="Templates\alexander-starter\starter-license-W3Layouts.txt" />
+    <Content Include="Templates\images\c1.jpg" />
+    <Content Include="Templates\images\c2.jpg" />
+    <Content Include="Templates\images\donald.jpg" />
+    <Content Include="Templates\images\hitler.jpg" />
+    <Content Include="Templates\images\tayyip.jpg" />
+    <Content Include="Templates\images\youtube.jpeg" />
     <Content Include="Templates\sidebar-01\css\bootstrap.min.css" />
     <Content Include="Templates\sidebar-01\css\bootstrap\mixins\_border-radius.css" />
     <Content Include="Templates\sidebar-01\css\bootstrap\mixins\_screen-reader.css" />
@@ -269,6 +285,8 @@
     <Content Include="Templates\sidebar-01\js\jquery.min.js" />
     <Content Include="Templates\sidebar-01\js\main.js" />
     <Content Include="Templates\sidebar-01\js\popper.js" />
+    <Content Include="Templates\images\logo.jpg" />
+    <Content Include="Templates\code_page.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -414,8 +432,8 @@
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Statistic\Index.cshtml" />
-    <Content Include="Views\Portfolio\Her Yonuyle SQL Server Egitim Bilgi Formu.pdf" />
     <Content Include="Views\WhoAmi\Index.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
