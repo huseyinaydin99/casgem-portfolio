@@ -1,4 +1,4 @@
-USE CasgemPortfolio;
+USE CasgemPortfolio; --Ä°lgili veritabanÄ±nÄ± kullandÄ±k.
 
 
 
@@ -71,21 +71,21 @@ INSERT INTO [dbo].[tbl_message]
            ,[MESSAGE_SUBJECT]
            ,[CONTENT])
      VALUES
-           ('Hasan Aydýn', 'hasanabi97@gmail.com', 'Selamun Aleykum', 'Nasýlsýn bilader?');
+           ('Hasan AydÃ½n', 'hasanabi97@gmail.com', 'Selamun Aleykum', 'NasÃ½lsÃ½n bilader?');
 INSERT INTO [dbo].[tbl_message]
            ([NAME_SURNAME]
            ,[SENDER_MAIL]
            ,[MESSAGE_SUBJECT]
            ,[CONTENT])
      VALUES
-           ('Ziya Aydýn', 'ziyaa87@gmail.com', 'Selamun Aleykum', 'Nasýlsýn bilader?');
+           ('Ziya AydÃ½n', 'ziyaa87@gmail.com', 'Selamun Aleykum', 'NasÃ½lsÃ½n bilader?');
 INSERT INTO [dbo].[tbl_message]
            ([NAME_SURNAME]
            ,[SENDER_MAIL]
            ,[MESSAGE_SUBJECT]
            ,[CONTENT])
      VALUES
-           ('Emine Ucyuz', 'emine88@gmail.com', 'Selamun Aleykum', 'Nasýlsýn bilader?');
+           ('Emine Ucyuz', 'emine88@gmail.com', 'Selamun Aleykum', 'NasÃ½lsÃ½n bilader?');
 
 
 
@@ -103,13 +103,13 @@ INSERT INTO [dbo].[tbl_referance]
            ,[EMAIL]
            ,[PHONE_NUMBER])
      VALUES
-           ('Zafer Cömert', 'zcomert@gmail.com', '05778881166');
+           ('Zafer CÃ¶mert', 'zcomert@gmail.com', '05778881166');
 INSERT INTO [dbo].[tbl_referance]
            ([NAME_SURNAME]
            ,[EMAIL]
            ,[PHONE_NUMBER])
      VALUES
-           ('Uður Ata', 'aliatabak99@gmail.com', '05448883366');
+           ('UÃ°ur Ata', 'aliatabak99@gmail.com', '05448883366');
 
 
 
@@ -120,7 +120,7 @@ INSERT INTO [dbo].[tbl_projects]
            ,[DESCRIPTION]
            ,[PROJECT_TYPE])
      VALUES
-           ('Çýlgýn Proje', 'Yapay zeka ile ilerlemek', 'Her þey çok güzel olacak.! :D', 'Backend Yazýlým');
+           ('Ã‡Ã½lgÃ½n Proje', 'Yapay zeka ile ilerlemek', 'Her Ã¾ey Ã§ok gÃ¼zel olacak.! :D', 'Backend YazÃ½lÃ½m');
 
 INSERT INTO [dbo].[tbl_projects]
            ([NAME_]
@@ -128,7 +128,7 @@ INSERT INTO [dbo].[tbl_projects]
            ,[DESCRIPTION]
            ,[PROJECT_TYPE])
      VALUES
-           ('Bluesoft Oto Galeri Programý', 'Oto galericilerin ihtiyacýný karþýlamak.', 'Masaüstü program. JavaFX ile yazýldý.', 'Masaüstü Yazýlým');
+           ('Bluesoft Oto Galeri ProgramÃ½', 'Oto galericilerin ihtiyacÃ½nÃ½ karÃ¾Ã½lamak.', 'MasaÃ¼stÃ¼ program. JavaFX ile yazÃ½ldÃ½.', 'MasaÃ¼stÃ¼ YazÃ½lÃ½m');
 
 
 
@@ -179,31 +179,31 @@ CREATE TABLE [dbo].[tbl_projects]
 -- MYSQL ICIN > FOR MYSQL >
 
 USE huseyin_aydin_db;
-SELECT * FROM huseyin_aydin_db.tbl_servýce;
+SELECT * FROM huseyin_aydin_db.tbl_servÃ½ce;
 
-INSERT INTO `huseyin_aydin_db`.`tbl_servýce` (`SERVICE_TITLE`, `SERVICE_ICON`, `SERVICE_NUMBER`, `SERVICE_CONTENT`) VALUES ('WEB GELISTIRME', 'TEST', '01', 'LOREM IPSOM');
-INSERT INTO `huseyin_aydin_db`.`tbl_servýce` (`SERVICE_TITLE`, `SERVICE_ICON`, `SERVICE_NUMBER`, `SERVICE_CONTENT`) VALUES ('OYUN GELISTIRME', 'TEST', '02', 'LOREM IPSOM');
-INSERT INTO `huseyin_aydin_db`.`tbl_servýce` (`SERVICE_TITLE`, `SERVICE_ICON`, `SERVICE_NUMBER`, `SERVICE_CONTENT`) VALUES ('MOBIL PROGRAMLAMA', 'TEST', '03', 'LOREM IPSOM');
-INSERT INTO `huseyin_aydin_db`.`tbl_servýce` (`SERVICE_TITLE`, `SERVICE_ICON`, `SERVICE_NUMBER`, `SERVICE_CONTENT`) VALUES ('VERI TABANI YONETIMI', 'TEST', '04', 'LOREM IPSOM');
-SELECT * FROM huseyin_aydin_db.tbl_servýce WHERE SERVICE_ID = 4;
-SELECT * FROM huseyin_aydin_db.tbl_servýce WHERE SERVICE_ID = 4 OR SERVICE_ID = 2;
-SELECT * FROM huseyin_aydin_db.tbl_servýce WHERE SERVICE_ID >= 1;
-SELECT * FROM huseyin_aydin_db.tbl_servýce WHERE SERVICE_ID = 4 AND SERVICE_NUMBER = '03';
+INSERT INTO `huseyin_aydin_db`.`tbl_servÃ½ce` (`SERVICE_TITLE`, `SERVICE_ICON`, `SERVICE_NUMBER`, `SERVICE_CONTENT`) VALUES ('WEB GELISTIRME', 'TEST', '01', 'LOREM IPSOM');
+INSERT INTO `huseyin_aydin_db`.`tbl_servÃ½ce` (`SERVICE_TITLE`, `SERVICE_ICON`, `SERVICE_NUMBER`, `SERVICE_CONTENT`) VALUES ('OYUN GELISTIRME', 'TEST', '02', 'LOREM IPSOM');
+INSERT INTO `huseyin_aydin_db`.`tbl_servÃ½ce` (`SERVICE_TITLE`, `SERVICE_ICON`, `SERVICE_NUMBER`, `SERVICE_CONTENT`) VALUES ('MOBIL PROGRAMLAMA', 'TEST', '03', 'LOREM IPSOM');
+INSERT INTO `huseyin_aydin_db`.`tbl_servÃ½ce` (`SERVICE_TITLE`, `SERVICE_ICON`, `SERVICE_NUMBER`, `SERVICE_CONTENT`) VALUES ('VERI TABANI YONETIMI', 'TEST', '04', 'LOREM IPSOM');
+SELECT * FROM huseyin_aydin_db.tbl_servÃ½ce WHERE SERVICE_ID = 4;
+SELECT * FROM huseyin_aydin_db.tbl_servÃ½ce WHERE SERVICE_ID = 4 OR SERVICE_ID = 2;
+SELECT * FROM huseyin_aydin_db.tbl_servÃ½ce WHERE SERVICE_ID >= 1;
+SELECT * FROM huseyin_aydin_db.tbl_servÃ½ce WHERE SERVICE_ID = 4 AND SERVICE_NUMBER = '03';
 
-UPDATE huseyin_aydin_db.tbl_servýce SET SERVICE_ICON = 'HOME ICON' WHERE SERVICE_ID = '1';
-SELECT * FROM huseyin_aydin_db.tbl_servýce WHERE SERVICE_ID = 1;
-SELECT * FROM huseyin_aydin_db.tbl_servýce WHERE SERVICE_TITLE LIKE '%A%';
-SELECT * FROM huseyin_aydin_db.tbl_servýce WHERE SERVICE_TITLE NOT LIKE '%A%';
-SELECT * FROM huseyin_aydin_db.tbl_servýce WHERE SERVICE_TITLE NOT LIKE '%A';
-SELECT * FROM huseyin_aydin_db.tbl_servýce WHERE SERVICE_TITLE NOT LIKE '%A%' AND SERVICE_ICON LIKE '%R%';
+UPDATE huseyin_aydin_db.tbl_servÃ½ce SET SERVICE_ICON = 'HOME ICON' WHERE SERVICE_ID = '1';
+SELECT * FROM huseyin_aydin_db.tbl_servÃ½ce WHERE SERVICE_ID = 1;
+SELECT * FROM huseyin_aydin_db.tbl_servÃ½ce WHERE SERVICE_TITLE LIKE '%A%';
+SELECT * FROM huseyin_aydin_db.tbl_servÃ½ce WHERE SERVICE_TITLE NOT LIKE '%A%';
+SELECT * FROM huseyin_aydin_db.tbl_servÃ½ce WHERE SERVICE_TITLE NOT LIKE '%A';
+SELECT * FROM huseyin_aydin_db.tbl_servÃ½ce WHERE SERVICE_TITLE NOT LIKE '%A%' AND SERVICE_ICON LIKE '%R%';
 
 -- AGGREGATE 
-SELECT COUNT(*) FROM huseyin_aydin_db.tbl_servýce;
-SELECT COUNT(*) FROM huseyin_aydin_db.tbl_servýce WHERE SERVICE_TITLE LIKE '%A';
+SELECT COUNT(*) FROM huseyin_aydin_db.tbl_servÃ½ce;
+SELECT COUNT(*) FROM huseyin_aydin_db.tbl_servÃ½ce WHERE SERVICE_TITLE LIKE '%A';
 
 
-DELETE FROM huseyin_aydin_db.tbl_servýce WHERE SERVICE_ID = 800;
-TRUNCATE TABLE huseyin_aydin_db.tbl_servýce;
+DELETE FROM huseyin_aydin_db.tbl_servÃ½ce WHERE SERVICE_ID = 800;
+TRUNCATE TABLE huseyin_aydin_db.tbl_servÃ½ce;
 
 
 
